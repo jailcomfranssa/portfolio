@@ -5364,9 +5364,10 @@ button.bg-secondary:hover,
 button.bg-secondary:focus {
   background-color: #545b62 !important; }
 
+/*
 .bg-success {
   background-color: #28a745 !important; }
-
+*/
 a.bg-success:hover, a.bg-success:focus,
 button.bg-success:hover,
 button.bg-success:focus {
@@ -5404,9 +5405,11 @@ button.bg-light:hover,
 button.bg-light:focus {
   background-color: #dae0e5 !important; }
 
+  /*
 .bg-dark {
   background-color: #343a40 !important; }
 
+  */
 a.bg-dark:hover, a.bg-dark:focus,
 button.bg-dark:hover,
 button.bg-dark:focus {
@@ -8276,13 +8279,15 @@ a[data-toggle="collapse"] {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s; }
-
+/*
 .btn.btn-primary {
   background: #f8b739;
   border-color: #f8b739; }
+*/
+/*
   .btn.btn-primary:hover, .btn.btn-primary:focus {
     background: #f8b739 !important;
     border-color: #f8b739 !important; }
-
+*/
 .footer p {
   color: rgba(255, 255, 255, 0.5); }

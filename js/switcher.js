@@ -24,7 +24,6 @@ function setActiveStyle(color){
     })
 }
 
-//=========ligth and dark mode===================
 const dayNight = document.querySelector(".day-night");
 dayNight.addEventListener("click", () =>{
     dayNight.querySelector("i").classList.toggle("fa-sun");

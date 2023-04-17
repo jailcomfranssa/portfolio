@@ -23,39 +23,50 @@
   <link rel="stylesheet" href="css/style-switcher.css">
 </head>
 
-<body>
+<body class="dark" style="background-color: var(--bg-black-900);">
 
-  <div class="wrapper d-flex align-items-stretch">
+  <div class="wrapper d-flex align-items-stretch ">
     <nav id="sidebar">
-      <div class="p-4 pt-5">
-        <a href="#" class="img logo rounded-circle mb-5" style="background-image: url(images/foto5.jpeg);"></a>
-        <ul class="list-unstyled components mb-5">
+      <div class="p-4 pt-5" style="position: fixed;">
+        <a href="#" class="img logo rounded-circle mb-5"
+          style="background-image: url(images/foto5.jpeg); margin-top: -37px;"></a>
+        <div class="func-nome">
+          <p>Jailson Silva de França</p>
+          <p class="p2-top">Desenvolvedor Full Stack</p>
+        </div>
+        <ul class="list-unstyled components mb-5 cor" style="margin-top: -25px;">
           <li class="active">
-            <a href="#home">Inicio</a>
+            <a href="#home"><i class="fa fa-home"></i> Inicio</a>
           </li>
           <li>
-            <a href="#">Sobre</a>
+            <a href="#about"><i class="fa fa-user"></i>Sobre</a>
           </li>
           <li>
-            <a href="#pageSubmenu">Cursos</a>
+            <a href="#curso"><i class="fa fa-list"></i>Cursos</a>
           </li>
           <li>
-            <a href="#">Portfolio</a>
+            <a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a>
           </li>
           <li>
-            <a href="#">Contato</a>
+            <a href="#contato"> <i class="fa fa-comments"></i>Contato</a>
           </li>
         </ul>
 
         <div class="footer">
+
           <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            <!---
             Copyright &copy;
             <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with
             <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com"
               target="_blank">Colorlib.com</a>
+            -->
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            <img src="images/01.gif" alt="" width="267" style="margin-top: -30px;">
+
           </p>
         </div>
+
 
       </div>
     </nav>
@@ -63,13 +74,14 @@
     <!-- Page Content  -->
     <div id="content" class="p-4 p-md-5">
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top bg-dark">
         <div class="container-fluid">
 
-          <button type="button" id="sidebarCollapse" class="btn btn-primary">
+          <button type="button" id="sidebarCollapse" class="btn btn-primary ">
             <i class="fa fa-bars"></i>
             <span class="sr-only">Toggle Menu</span>
           </button>
+          <!--APAGAR -->
           <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -77,21 +89,21 @@
           </button>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="nav navbar-nav ml-auto">
+            <ul class="nav navbar-nav ml-auto cor">
               <li class="nav-item active">
                 <a class="nav-link" href="#home">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Sobre</a>
+                <a class="nav-link" href="#about">Sobre</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Cursos</a>
+                <a class="nav-link" href="#curso">Cursos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
+                <a class="nav-link" href="#portfolio">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contato</a>
+                <a class="nav-link" href="#contato">Contato</a>
               </li>
             </ul>
           </div>
@@ -102,47 +114,1474 @@
         <!--
           <h2 class="mb-4">Sidebar #01</h2>
           -->
-        <div class="home-info">
-          <h3 class="hello">
-            Ola, meu nome é
-            <span class="name">Jailson Silva de França</span>
-          </h3>
-          <h3 class="my-profession">
-            Eu sou
-            <span class="typing">web designer</span>
-          </h3>
+        <div class="container">
 
-          <p>
-            Sou um profissional criativo, motivado e apaixonado por programação. Estou
-            constantemente buscando conhecimento e aprimoramento para expandir minhas habilidades e
-            atuação.
+          <div class="row">
+
+            <div class="col"></div>
+            <div class="col-10">
+              <img src="images/banner.png" class="img-fundo" alt="">
+              <div class="home-info">
+                <h3 class="hello">
+                  Ola, meu nome é
+                  <span class="name">Jailson Silva de França</span>
+                </h3>
+                <h3 class="my-profession">
+                  Eu sou
+                  <span class="typing">web designer</span>
+                </h3>
+
+                <p>
+                  Sou um profissional criativo, motivado e apaixonado por programação. Estou
+                  constantemente buscando conhecimento e aprimoramento para expandir minhas habilidades e
+                  atuação.
+                  <br>
+                  Meu objetivo é trabalhar em uma empresa com um ambiente descontraído e agradável que
+                  ofereça oportunidades de aprendizado e crescimento, com ênfase no desenvolvimento web.
+                  <br>
+                  Minha expectativa de carreira é ter uma base sólida na stack Javascript, Java, Spring
+                  Boot, Node.js, Vue.js, React e Angular, para dominar tanto o front-end quanto o
+                  back-end.
+                  <br>
+                  Almejo me tornar um especialista full stack nos próximos anos e sempre me
+                  atualizar para crescer profissionalmente.
+                  <br>
+                  Acredito que minha paixão pela programação e minha sede de conhecimento são essenciais
+                  para ser bem-sucedido no campo da tecnologia. Estou animado para colaborar em projetos
+                  desafiadores e contribuir para o sucesso da empresa em que eu trabalhar.
+                </p>
+                <a href="#contato">
+                  <button class="btn-contrate">
+                    <b>Contate-me</b>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="col"></div>
+          </div>
+        </div>
+      </main>
+      <hr>
+
+      <section class="about section" id="about">
+        <div class="section-title padd-15">
+
+          <h2>Sobre Mim</h2>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col"></div>
+            <div class="col-10">
+
+              <div class="about-text padd-15">
+                <h3>Jailson S. de França <span>Desenvolvedor Full Stack</span></h3>
+                <p>Estou em busca de uma oportunidade de efetivação na minha área de
+                  conhecimento, após adquirir experiência em estágios anteriores. Meu objetivo é
+                  colaborar em um ambiente de trabalho onde eu possa colocar em prática meus
+                  conhecimentos para beneficiar a empresa/organização, enquanto cresço
+                  profissionalmente.</P>
+
+                <p>Tenho experiência como QA Software Engineer na DOCK TECNOLOGIA S.A., auxiliando
+                  no desenvolvimento de projetos de TI, teste de qualidade de sistemas,
+                  programação de sistemas e atividades de infraestrutura tecnológica. Também atuei
+                  como Desenvolvedor Full Stack na JUSTIÇA FEDERAL DE PRIMEIRO GRAU NA PARAÍBA,
+                  analisando e desenvolvendo sistemas web e realizando testes automatizados com
+                  selenium. Alguns dos trabalhos que desenvolvi incluem o Sistema de Cargas-JFPB e
+                  as Juntadas automatizadas de AR-JFPB.</p>
+
+                <p>Minhas habilidades técnicas incluem HTML5, CSS3, JavaScript, Bootstrap, Vue.js,
+                  Angular, Java, Spring Boot, Node.js, Git e SQL, e estou familiarizado com
+                  ferramentas como Jira, MySQL, PostgreSQL, Visual Studio Code, IntelliJ e
+                  WebStorm.</p>
+
+                <p>Além disso, sou um aprendiz rápido e organizado, com habilidades de gerenciamento
+                  e capacidade de ouvir bem. Sou também autodidata e estou sempre buscando me
+                  aprimorar constantemente.</p>
+
+                <p>Para melhorar minhas chances de efetivação, estou comprometido em continuar
+                  aprendendo e mantendo-me atualizado com as tecnologias relevantes em minha área.
+                  Pretendo também buscar certificações em áreas específicas, demonstrando meu
+                  conhecimento e comprometimento.</p>
+
+                <p>Valorizo a transparência e, portanto, comunicarei minhas expectativas e metas de
+                  carreira claramente aos meus superiores. Também continuarei aprimorando minhas
+                  habilidades interpessoais, incluindo comunicação clara e trabalho em equipe.</p>
+
+                <p>Agradeço a oportunidade e estou ansioso para contribuir com minha experiência e
+                  habilidades em um ambiente de trabalho colaborativo.</p>
+              </div>
+
+
+            </div>
+            <div class="col"></div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <article>
+          <div class="card mb-3 bg-dark" style="max-width: 100%;">
+            <div class="row no-gutters">
+              <div class="col-md-3">
+                <img src="images/02.gif" alt="" width="100%" height="100%">
+              </div>
+              <div class="col-md-9">
+                <div class="card-body">
+                  <h3 class="card-title" style="color: var(--text-black-700);">Dados Pessoais:</h3>
+                  <div class="row info-item">
+                    <div class="col-xl-5 col-12">
+                      <ul class="list-group list-group-flush">
+
+                        <li class="list-group-item ">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                            class="bi bi-globe-americas" viewBox="0 0 16 16">
+                            <path
+                              d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484-.08.08-.162.158-.242.234-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z" />
+                          </svg>
+                          <span class="badge badge-info info">País</span>
+                          <span>Brasil</span>
+                        </li>
+                        <li class="list-group-item">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                            class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path
+                              d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                          </svg>
+                          <span class="badge badge-info info">Estado</span>
+                          <span>Paraíba</span>
+                        </li>
+                        <li class="list-group-item">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                            class="bi bi-geo-alt" viewBox="0 0 16 16">
+                            <path
+                              d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                          </svg>
+                          <span class="badge badge-info info">Cidade</span>
+                          <span>João Pessoa</span>
+                        </li>
+                        <li class="list-group-item">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                            class="bi bi-person-heart" viewBox="0 0 16 16">
+                            <path
+                              d="M9 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm-9 8c0 1 1 1 1 1h10s1 0 1-1-1-4-6-4-6 3-6 4Zm13.5-8.09c1.387-1.425 4.855 1.07 0 4.277-4.854-3.207-1.387-5.702 0-4.276Z" />
+                          </svg>
+                          <span class="badge badge-info info">Estado Civil</span>
+                          <span>Solteiro</span>
+                        </li>
+                        <li class="list-group-item">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                            class="bi bi-person-plus" viewBox="0 0 16 16">
+                            <path
+                              d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                            <path fill-rule="evenodd"
+                              d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z" />
+                          </svg>
+                          <span class="badge badge-info info">Idade</span>
+                          <span>35 anos</span>
+                        </li>
+                      </ul>
+
+
+                    </div>
+                    <div class="col-xl col-12">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                            class="bi bi-envelope-at" viewBox="0 0 16 16">
+                            <path
+                              d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z" />
+                            <path
+                              d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z" />
+                          </svg>
+                          <span class="badge badge-info info">Email</span>
+                          <span>jailson.franca@academico.ifpb.edu.br</span>
+                        </li>
+                        <li class="list-group-item">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                            class="bi bi-envelope-at" viewBox="0 0 16 16">
+                            <path
+                              d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z" />
+                            <path
+                              d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z" />
+                          </svg>
+                          <span class="badge badge-info info">Email</span>
+                          <span>jail_son_0@hotmail.com</span>
+                        </li>
+                        <li class="list-group-item">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                            class="bi bi-telephone" viewBox="0 0 16 16">
+                            <path
+                              d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                          </svg>
+                          <span class="badge badge-info info">Telefone</span>
+                          <span>(83) 99942-3019</span>
+                        </li>
+                        <li class="list-group-item">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                            class="bi bi-wrench" viewBox="0 0 16 16">
+                            <path
+                              d="M.102 2.223A3.004 3.004 0 0 0 3.78 5.897l6.341 6.252A3.003 3.003 0 0 0 13 16a3 3 0 1 0-.851-5.878L5.897 3.781A3.004 3.004 0 0 0 2.223.1l2.141 2.142L4 4l-1.757.364L.102 2.223zm13.37 9.019.528.026.287.445.445.287.026.529L15 13l-.242.471-.026.529-.445.287-.287.445-.529.026L13 15l-.471-.242-.529-.026-.287-.445-.445-.287-.026-.529L11 13l.242-.471.026-.529.445-.287.287-.445.529-.026L13 11l.471.242z" />
+                          </svg>
+                          <span class="badge badge-info info"> Freelance</span>
+                          <span class="badge badge-success">Disponível</span>
+                        </li>
+                        <li class="list-group-item"></li>
+                      </ul>
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="container ">
+            <div class="row justify-content-md-center p-2">
+              <a href="https://www.linkedin.com/in/jailson-silva-de-franca" target="_blank">
+                <img
+                  src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"
+                  alt="" style="margin-right: 15px;">
+              </a>
+
+              <a href="https://www.instagram.com/" target="_blank">
+                <img
+                  src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"
+                  alt="" style="margin-right: 15px;">
+              </a>
+
+              <a href="https://github.com/jailcomfranssa" target="_blank">
+                <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"
+                  alt="" style="margin-right: 15px;">
+              </a>
+
+              <a href="https://gitlab.com/jailson91" target="_blank">
+                <img src="https://img.shields.io/badge/GitLab-330F63?style=for-the-badge&logo=gitlab&logoColor=white"
+                  alt="" style="margin-right: 15px;">
+              </a>
+
+              <a href="https://www.facebook.com/jailson.defranca?mibextid=ZbWKwL" target="_blank">
+                <img
+                  src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white"
+                  alt="" style="margin-right: 15px;">
+              </a>
+
+              <a href="https://twitter.com.br/" target="_blank">
+                <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"
+                  alt="" style="margin-right: 15px;">
+              </a>
+
+              <a href="https://www.tiktok.com/pt-BR/" target="_blank">
+                <img src="https://img.shields.io/badge/TikTok-000000?style=for-the-badge&logo=tiktok&logoColor=white"
+                  alt="" style="margin-right: 15px;">
+              </a>
+
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row">
+
+              <div class="button-cv" data-tooltip="CV">
+                <a href="https://jailcomfranssa.github.io/cv/" target="_blank" rel="noopener noreferrer">
+
+                  <div class="button-wrapper">
+                    <div class="text">Download Currículo</div>
+                    <span class="icon-cv">
+                      <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em"
+                        preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17">
+                        </path>
+                      </svg>
+                    </span>
+                  </div>
+
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+        <hr>
+      </section>
+
+      <section class="progress_bar">
+        <div class="container">
+          <div class="row">
+            <img src="images/soft-skills-hard-skills3.jpg" style="width: 100%; margin-bottom: 20px;" alt="">
+          </div>
+
+          <div class="row">
+            <div class="col-xl col-12">
+
+              <ul>
+                <li>
+                  <div class="progress-icon"> </div>
+                  <h3>
+                    <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
+                      alt="">
+                    <span>%</span> <span class="counter">95</span>
+                  </h3>
+                  <div class="bar"> <span class="html WOW"></span></div>
+                </li>
+
+                <li>
+                  <div class="progress-icon"> </div>
+                  <h3>
+                    <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
+                      alt="">
+                    <span>%</span> <span class="counter">85</span>
+                  </h3>
+                  <div class="bar"> <span class="css WOW"></span></div>
+                </li>
+
+                <li>
+                  <div class="progress-icon"> </div>
+                  <h3>
+                    <img
+                      src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"
+                      alt="">
+                    <span>%</span> <span class="counter">75</span>
+                  </h3>
+                  <div class="bar"> <span class="js WOW"></span></div>
+                </li>
+
+                <li>
+                  <div class="progress-icon"> </div>
+                  <h3>
+                    <img
+                      src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white"
+                      alt="">
+                    <span>%</span> <span class="counter">80</span>
+                  </h3>
+                  <div class="bar"> <span class="angular WOW"></span></div>
+                </li>
+
+                <li>
+                  <div class="progress-icon"> </div>
+                  <h3>
+                    <img
+                      src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white"
+                      alt="">
+                    <span>%</span> <span class="counter">75</span>
+                  </h3>
+                  <div class="bar"> <span class="node WOW"></span></div>
+                </li>
+
+              </ul>
+            </div>
+
+            <div class="col-xl col-12">
+              <ul>
+
+                <li>
+                  <div class="progress-icon"> </div>
+                  <h3>
+                    <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"
+                      alt="">
+                    <span>%</span> <span class="counter">76</span>
+                  </h3>
+                  <div class="bar"> <span class="java WOW"></span></div>
+                </li>
+
+                <li>
+                  <div class="progress-icon"> </div>
+                  <h3>
+                    <img
+                      src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white"
+                      alt="">
+                    <img src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white"
+                      alt="">
+                    <span>%</span> <span class="counter">85</span>
+                  </h3>
+                  <div class="bar"> <span class="sql WOW"></span></div>
+                </li>
+
+                <li>
+                  <div class="progress-icon"> </div>
+                  <h3>
+                    <img
+                      src="https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D"
+                      alt="">
+                    <span>%</span> <span class="counter">80</span>
+                  </h3>
+                  <div class="bar"> <span class="vue WOW"></span></div>
+                </li>
+
+                <li>
+                  <div class="progress-icon"> </div>
+
+                  <h3>
+                    <img
+                      src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white"
+                      alt="">
+                    <span>%</span> <span class="counter">80</span>
+                  </h3>
+                  <div class="bar"> <span class="spring WOW"></span></div>
+                </li>
+
+                <li>
+                  <div class="progress-icon"> </div>
+                  <h3>
+                    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
+                      alt="">
+                    <span>%</span> <span class="counter">70</span>
+                  </h3>
+                  <div class="bar"> <span class="react WOW"></span></div>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr>
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-xl col-12">
+              <h3 class="title">
+                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor"
+                  class="bi bi-mortarboard-fill" viewBox="0 0 16 16" style="color: var(--skin-color);">
+                  <path
+                    d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z" />
+                  <path
+                    d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z" />
+                </svg>
+                <span>Education</span>
+              </h3>
+
+              <div class="timeline-box">
+                <div class="timeline shadow-dark">
+                  <div class="timeline-item">
+                    <div class="circle-dot">
+
+                    </div>
+                    <h3 class="timeline-date">
+                      <i class="fa fa-calendar"></i> 2018 - 2022
+                    </h3>
+                    <h4 class="timeline-title">Sistema Para Internet</h4>
+                    <h4 class="timeline-title">Instituto Federal da Paraíba (IFPB)</h4>
+                    <p class="timeline-text">
+                      O IFPB (Instituto Federal de Educação, Ciência e Tecnologia da
+                      Paraíba) é uma instituição de ensino superior e técnico público
+                      federal, com sede na cidade de João Pessoa, Paraíba, Brasil. Foi
+                      criado em 2008, a partir da fusão de duas instituições de ensino
+                      técnico federal que já existiam no estado.
+                    </p>
+                  </div>
+                  <!--#####################Formação##############################-->
+
+                  <div class="timeline-item">
+                    <div class="circle-dot">
+
+                    </div>
+                    <h3 class="timeline-date">
+
+                    </h3>
+                    <h4 class="timeline-title">Cursos Suplementares</h4>
+                    <h4 class="timeline-title">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-double-right" viewBox="0 0 16 16" style="color: var(--skin-color);">
+                        <path fill-rule="evenodd"
+                          d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z" />
+                        <path fill-rule="evenodd"
+                          d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z" />
+                      </svg>
+                      Alura:
+                    </h4>
+                    <p class="timeline-text">
+                      <a href="https://cursos.alura.com.br/degree/certificate/3aeaa0c7-a6e5-41a6-b72a-971b10a6254d"
+                        target="_blank">Formação
+                        Spring Framework</a>,
+                      <a href="https://cursos.alura.com.br/certificate/40ab27a0-4ebe-4267-bb88-84dd09c3ead3"
+                        target="_blank">Spring
+                        MVC: crie um web app com Thymeleaf e Bootstrap</a>
+                    </p>
+                    <br>
+                    <h4 class="timeline-title">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-double-right" viewBox="0 0 16 16" style="color: var(--skin-color);">
+                        <path fill-rule="evenodd"
+                          d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z" />
+                        <path fill-rule="evenodd"
+                          d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z" />
+                      </svg>
+                      Udemy:
+                    </h4>
+                    <p class="timeline-text">
+                      <a href="https://www.udemy.com/certificate/UC-70f49607-298b-41f5-adc3-23b3c1fe443a/"
+                        target="_blank">Go
+                        (Golang): Explorando a Linguagem do Google</a>,
+                      <a href="https://www.udemy.com/certificate/UC-d4a58499-afcd-4dda-bfbf-270bdc0005bb/"
+                        target="_blank">Testando
+                        API Rest com REST-assured</a>
+                    </p>
+                    <br>
+                    <h4 class="timeline-title">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-double-right" viewBox="0 0 16 16" style="color: var(--skin-color);">
+                        <path fill-rule="evenodd"
+                          d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z" />
+                        <path fill-rule="evenodd"
+                          d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z" />
+                      </svg>
+                      Dio_me:
+                    </h4>
+                    <p class="timeline-text">
+                      <a href="https://www.dio.me/certificate/6FBF30C2" target="_blank">Formação Angular Developer</a>,
+                      <a href="https://www.dio.me/certificate/9895CADD" target="_blank">Formação HTML Web Developer</a>,
+                      <a href="https://www.dio.me/certificate/BD2486DA" target="_blank">Potência Tech Angular Developer
+                        - Powered by
+                        iFood</a>
+                    </p>
+                  </div>
+
+                  <!--###################################################-->
+                </div>
+              </div>
+
+            </div>
+            <div class="col-xl col-12">
+              <h3 class="title">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor"
+                  class="bi bi-person-badge" viewBox="0 0 16 16" style="color: var(--skin-color);">
+                  <path d="M6.5 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                  <path
+                    d="M4.5 0A2.5 2.5 0 0 0 2 2.5V14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2.5A2.5 2.5 0 0 0 11.5 0h-7zM3 2.5A1.5 1.5 0 0 1 4.5 1h7A1.5 1.5 0 0 1 13 2.5v10.795a4.2 4.2 0 0 0-.776-.492C11.392 12.387 10.063 12 8 12s-3.392.387-4.224.803a4.2 4.2 0 0 0-.776.492V2.5z" />
+                </svg>
+                <span>Experience</span>
+
+              </h3>
+
+              <div class="timeline-box padd-15">
+                <div class="timeline shadow-dark">
+                  <div class="timeline-item">
+                    <div class="circle-dot">
+
+                    </div>
+                    <h3 class="timeline-date">
+                      <i class="fa fa-calendar"></i> 2021 - 2022
+                    </h3>
+                    <h4 class="timeline-title">DOCK TECNOLOGIA S.A</h4>
+                    <h5 class="timeline-title">Q/A analista de qualidade de software.
+                    </h5>
+                    <p class="timeline-text">
+                      Auxiliar no desenvolvimento de projetos de TI, auxiliar em teste
+                      de qualidade de sistemas, auxiliar na programação de sistemas,
+                      auxiliar em atividades de infraestrutura tecnológica.
+                    </p>
+                    <p class="timeline-text"> <b> Principais competências desenvolvidas:</b>
+                      Desenvolvimento de software, API REST, Elaboração de testes,
+                      Automação de testes, SQL, Git e Java (Cucumber, Spring Boot)</p>
+                  </div>
+                  <!--#####################Formação##############################-->
+                  <div class="timeline-item">
+                    <div class="circle-dot">
+
+                    </div>
+                    <h3 class="timeline-date">
+                      <i class="fa fa-calendar"></i> 2019 - 2021
+                    </h3>
+                    <h4 class="timeline-title">JUSTIÇA FEDERAL DE PRIMEIRO GRAU NA
+                      PARAÍBA</h4>
+                    <h5 class="timeline-title">Desenvolvedor full stack</h5>
+                    <p class="timeline-text">
+                      Desenvolver atividades de pesquisas voltadas à implementação de
+                      ferramentas e de soluções relacionadas às atividades da Justiça
+                      Federal na Paraíba.</p>
+                    <p class="timeline-text">
+                      <b>Principais competências desenvolvidas:</b> Desenvolvimento
+                      front-end, Vue.js, Html, Css , Desenvolvimento de Api Rest,
+                      Node.js, SQL é Git.
+                    </p>
+                  </div>
+                  <!--###################################################-->
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <hr>
+
+      <section>
+        <div class="container" id="curso">
+          <div class="section-title padd-15">
+            <h2>Cursos</h2>
+          </div>
+          <div class="row">
+            <div class="col-xl col-12">
+              <div class="service-item">
+                <div class="service-item-inner">
+                  <div class="icon">
+                    <img src="images/icon/programacao.png" alt="icon programação">
+                  </div>
+                  <h4>Programação</h4>
+
+                  <p>
+                    <a href="#programacao">Certificados</a>
+                  </p>
+                </div>
+              </div>
+
+            </div>
             <br>
-            Meu objetivo é trabalhar em uma empresa com um ambiente descontraído e agradável que
-            ofereça oportunidades de aprendizado e crescimento, com ênfase no desenvolvimento web.
             <br>
-            Minha expectativa de carreira é ter uma base sólida na stack Javascript, Java, Spring
-            Boot, Node.js, Vue.js, React e Angular, para dominar tanto o front-end quanto o
-            back-end.
-            <br>
-            Almejo me tornar um especialista full stack nos próximos anos e sempre me
-            atualizar para crescer profissionalmente.
-            <br>
-            Acredito que minha paixão pela programação e minha sede de conhecimento são essenciais
-            para ser bem-sucedido no campo da tecnologia. Estou animado para colaborar em projetos
-            desafiadores e contribuir para o sucesso da empresa em que eu trabalhar.
-          </p>
-          <button>
-            <b>Contrate-me</b>
-        </button>
+
+            <div class="col-xl col-12">
+              <div class="service-item">
+                <div class="service-item-inner">
+                  <div class="icon">
+                    <img src="images/icon/f.png" alt="icon programação">
+                  </div>
+                  <h4>Front-end</h4>
+
+                  <p>
+                    <a href="#programacao">Certificados</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl col-12">
+              <div class="service-item">
+                <div class="service-item-inner">
+                  <div class="icon">
+                    <img src="images/icon/devops.png" alt="icon programação">
+                  </div>
+                  <h4>DevOps</h4>
+
+                  <p>
+                    <a href="#programacao">Certificados</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xl col-12">
+              <div class="service-item">
+                <div class="service-item-inner">
+                  <div class="icon">
+                    <img src="images/icon/qa.png" alt="icon programação">
+                  </div>
+                  <h4>Quality Assurance</h4>
+
+                  <p>
+                    <a href="#programacao">Certificados</a>
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="col-xl col-12">
+              <div class="service-item">
+                <div class="service-item-inner">
+                  <div class="icon">
+                    <img src="images/icon/scrum.png" alt="icon programação" style="width: 94px;">
+                  </div>
+                  <h4>Ferramentas Scrum</h4>
+
+                  <p>
+                    <a href="#programacao">Certificados</a>
+                  </p>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-xl col-12">
+              <div class="service-item">
+                <div class="service-item-inner">
+                  <div class="icon">
+                    <img src="images/icon/outos.png" alt="icon programação" style="width: 71px;">
+                  </div>
+                  <h4>Outros</h4>
+
+                  <p>
+                    <a href="#programacao">Certificados</a>
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
 
         </div>
 
-      </main>
+      </section>
+      <hr>
+
+      <section>
+        <div class="container" id="portfolio">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Portfolio</h2>
+            </div>
+          </div>
+          <!--POrtifolio inicio-->
+          <div class="row">
+
+            <div class="col-xl col-12">
+              <div class="card bg-dark" style="width: 100%;">
+                <img class="card-img-top" src="images/portfolio-7.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text"> <b>Nome:</b> Facere totam doloribus earum qui ullam.</p>
+                  <p class="card-text"> <b>Descrição:</b>Facere totam doloribus earum qui ullam.</p>
+                  <div class="justify-content-md-center p-4">
+                    <img
+                      src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"
+                      alt="">
+                    <img
+                      src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"
+                      alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl col-12">
+              <div class="card bg-dark" style="width: 100%;">
+                <img class="card-img-top" src="images/portfolio-7.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text"> <b>Nome:</b> Facere totam doloribus earum qui ullam.</p>
+                  <p class="card-text"> <b>Descrição:</b>Facere totam doloribus earum qui ullam.</p>
+                  <div class="justify-content-md-center p-4">
+                    <img
+                      src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"
+                      alt="">
+                    <img
+                      src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"
+                      alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl col-12">
+              <div class="card bg-dark" style="width: 100%;">
+                <img class="card-img-top" src="images/portfolio-7.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text"> <b>Nome:</b> Facere totam doloribus earum qui ullam.</p>
+                  <p class="card-text"> <b>Descrição:</b>Facere totam doloribus earum qui ullam.</p>
+                  <div class="justify-content-md-center p-4">
+                    <img
+                      src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"
+                      alt="">
+                    <img
+                      src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"
+                      alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="row" style="margin-top: 40px;">
+
+            <div class="col-xl col-12">
+              <div class="card bg-dark" style="width: 100%;">
+                <img class="card-img-top" src="images/portfolio-7.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text"> <b>Nome:</b> Facere totam doloribus earum qui ullam.</p>
+                  <p class="card-text"> <b>Descrição:</b>Facere totam doloribus earum qui ullam.</p>
+                  <div class="justify-content-md-center p-4">
+                    <img
+                      src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"
+                      alt="">
+                    <img
+                      src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"
+                      alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl col-12">
+              <div class="card bg-dark" style="width: 100%;">
+                <img class="card-img-top" src="images/portfolio-7.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text"> <b>Nome:</b> Facere totam doloribus earum qui ullam.</p>
+                  <p class="card-text"> <b>Descrição:</b>Facere totam doloribus earum qui ullam.</p>
+                  <div class="justify-content-md-center p-4">
+                    <img
+                      src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"
+                      alt="">
+                    <img
+                      src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"
+                      alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl col-12">
+              <div class="card bg-dark" style="width: 100%;">
+                <img class="card-img-top" src="images/portfolio-7.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text"> <b>Nome:</b> Facere totam doloribus earum qui ullam.</p>
+                  <p class="card-text"> <b>Descrição:</b>Facere totam doloribus earum qui ullam.</p>
+                  <div class="justify-content-md-center p-4">
+                    <img
+                      src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"
+                      alt="">
+                    <img
+                      src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"
+                      alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+      <hr>
+      <section>
+        <div class="container" id="contato">
+          <div class="row">
+            <div class="section-title ">
+              <h2>Contate-me</h2>
+            </div>
+          </div>
+          <h3 class="contact-title"> Você tem alguma dúvida ?</h3>
+          <h4 class="contact-sub-title">ESTOU AOS SEUS SERVIÇOS</h4>
+
+          <div class="row">
+
+            <div class="col-xl col-12" align="center">
+
+              <div class="contact-info-item">
+                <div class="icon"> <i class="fa fa-phone"></i></div>
+                <h4>Ligue</h4>
+                <p>+55 (83) 9 9942-3019</p>
+              </div>
+            </div>
+
+            <div class="col-xl col-12" align="center">
+              <div class="contact-info-item">
+                <div class="icon"> <i class="fa fa-map-marked-alt"></i></div>
+                <h4>Local</h4>
+                <p>João Pessoa - PB</p>
+              </div>
+            </div>
+
+            <div class="col-xl col-12" align="center">
+              <div class="contact-info-item ">
+                <div class="icon"> <i class="fa fa-envelope"></i></div>
+                <h4>Email</h4>
+                <p>jail_son_0@hotmail.com</p>
+              </div>
+            </div>
+
+            <div class="col-xl col-12" align="center">
+              <div class="contact-info-item">
+                <div class="icon"> <i class="fa fa-globe-europe"></i></div>
+                <h4>Website</h4>
+                <p>https://jailcomfranssa.github.io/cv/</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bk">
+            <h3 class="contact-title">MANDE-ME UM EMAIL</h3>
+            <form action="https://api.staticforms.xyz/submit" method="post" style="margin-top: -40px;">
+              <input type="hidden" name="accessKey" value="16eb649d-4f48-4d89-b37f-fc085d35e908">
+              <input type="hidden" name="redirectTo" value="#">
+
+              <div class="contact-form">
+                <div class="row" style="margin-top: 110px;">
+                  <div class="col">
+                    <div class="form-item">
+                      <div class="form-group">
+                        <input type="text" name="name" class="form-control" placeholder="Nome">
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="col">
+                    <div class="form-item">
+                      <div class="form-group">
+                        <input type="email" name="email" class="form-control" placeholder="Email">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="form-item col">
+                    <div class="form-group">
+                      <input type="text" name="subject" class="form-control" placeholder="Assunto">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="form-item col">
+                    <div class="form-group">
+                      <textarea name="message" class="form-control" id="" placeholder="Mensagem"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button type="submit" class="bt-send">
+                <div class="svg-wrapper-1">
+                  <div class="svg-wrapper">
+                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path
+                        d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                        fill="currentColor"></path>
+                    </svg>
+                  </div>
+                </div>
+                <span>Enviar Mensagem</span>
+              </button>
+            </form>
+
+          </div>
+        </div>
+      </section>
+      <hr>
+
+      <section>
+        <article>
+          <div class="container">
+            <div class="row">
+              <div class="section-title ">
+                <h2>Cursos Programação</h2>
+              </div>
+            </div>
+            <div class="row">
+              <!--##################################01#####################################################-->
+              <div class="col-xl col-12 padd-bottom-30">
+                <div class="cursos">
+
+                  <div class="card-curso">
+                    <div class="content">
+                      <div class="back">
+                        <div class="back-content">
+                          <img src="images/icon/al.webp" width="130px" alt="">
+                          <strong class="str-curso">Microservices com Spring Cloud</strong>
+                        </div>
+                      </div>
+                      <div class="front">
+
+                        <div class="img">
+                          <div class="circle">
+                          </div>
+                          <div class="circle" id="right">
+                          </div>
+                          <div class="circle" id="bottom">
+                          </div>
+                        </div>
+
+                        <div class="front-content">
+                          <small class="badge">Certificado</small>
+                          <a href="https://cursos.alura.com.br/certificate/c95b048d-3d37-42e8-8d19-486611a43b62"
+                            target="_blank" rel="noopener noreferrer">
+                            <img src="images/certificados/MicrosrvicesSpringCloud.png" alt="" width="225em">
+                          </a>
+                          <div class="description">
+                            <div class="title">
+                              <p class="title">
+                                <strong>Finalizado</strong>
+                              </p>
+                              <svg fill-rule="nonzero" height="15px" width="20px" viewBox="0,0,256,256"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                                <g style="mix-blend-mode: normal" text-anchor="none" font-size="none" font-weight="none"
+                                  font-family="none" stroke-dashoffset="0" stroke-dasharray="" stroke-miterlimit="10"
+                                  stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="none"
+                                  fill-rule="nonzero" fill="#20c997">
+                                  <g transform="scale(8,8)">
+                                    <path d="M25,27l-9,-6.75l-9,6.75v-23h18z"></path>
+                                  </g>
+                                </g>
+                              </svg>
+                            </div>
+                            <p class="card-footer">
+                              8 Horas &nbsp; | &nbsp; 09 de setembro de 2022
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--##################################02#####################################################-->
+              <div class="col-xl col-12 padd-bottom-30">
+                <div class="cursos">
+
+                  <div class="card-curso">
+                    <div class="content">
+                      <div class="back">
+                        <div class="back-content">
+                          <img src="images/icon/al.webp" width="130px" alt="">
+                          <strong class="str-curso">Microservices com Spring Cloud</strong>
+                        </div>
+                      </div>
+                      <div class="front">
+
+                        <div class="img">
+                          <div class="circle">
+                          </div>
+                          <div class="circle" id="right">
+                          </div>
+                          <div class="circle" id="bottom">
+                          </div>
+                        </div>
+
+                        <div class="front-content">
+                          <small class="badge">Certificado</small>
+                          <a href="https://cursos.alura.com.br/certificate/c95b048d-3d37-42e8-8d19-486611a43b62"
+                            target="_blank" rel="noopener noreferrer">
+                            <img src="images/certificados/MicrosrvicesSpringCloud.png" alt="" width="100%">
+                          </a>
+                          <div class="description">
+                            <div class="title">
+                              <p class="title">
+                                <strong>Finalizado</strong>
+                              </p>
+                              <svg fill-rule="nonzero" height="15px" width="20px" viewBox="0,0,256,256"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                                <g style="mix-blend-mode: normal" text-anchor="none" font-size="none" font-weight="none"
+                                  font-family="none" stroke-dashoffset="0" stroke-dasharray="" stroke-miterlimit="10"
+                                  stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="none"
+                                  fill-rule="nonzero" fill="#20c997">
+                                  <g transform="scale(8,8)">
+                                    <path d="M25,27l-9,-6.75l-9,6.75v-23h18z"></path>
+                                  </g>
+                                </g>
+                              </svg>
+                            </div>
+                            <p class="card-footer">
+                              8 Horas &nbsp; | &nbsp; 09 de setembro de 2022
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--##################################03#####################################################-->
+              <div class="col-xl col-12 padd-bottom-30">
+                <div class="cursos">
+
+                  <div class="card-curso">
+                    <div class="content">
+                      <div class="back">
+                        <div class="back-content">
+                          <img src="images/icon/al.webp" width="130px" alt="">
+                          <strong class="str-curso">Microservices com Spring Cloud</strong>
+                        </div>
+                      </div>
+                      <div class="front">
+
+                        <div class="img">
+                          <div class="circle">
+                          </div>
+                          <div class="circle" id="right">
+                          </div>
+                          <div class="circle" id="bottom">
+                          </div>
+                        </div>
+
+                        <div class="front-content">
+                          <small class="badge">Certificado</small>
+                          <a href="https://cursos.alura.com.br/certificate/c95b048d-3d37-42e8-8d19-486611a43b62"
+                            target="_blank" rel="noopener noreferrer">
+                            <img src="images/certificados/MicrosrvicesSpringCloud.png" alt="" width="100%">
+                          </a>
+                          <div class="description">
+                            <div class="title">
+                              <p class="title">
+                                <strong>Finalizado</strong>
+                              </p>
+                              <svg fill-rule="nonzero" height="15px" width="20px" viewBox="0,0,256,256"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                                <g style="mix-blend-mode: normal" text-anchor="none" font-size="none" font-weight="none"
+                                  font-family="none" stroke-dashoffset="0" stroke-dasharray="" stroke-miterlimit="10"
+                                  stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="none"
+                                  fill-rule="nonzero" fill="#20c997">
+                                  <g transform="scale(8,8)">
+                                    <path d="M25,27l-9,-6.75l-9,6.75v-23h18z"></path>
+                                  </g>
+                                </g>
+                              </svg>
+                            </div>
+                            <p class="card-footer">
+                              8 Horas &nbsp; | &nbsp; 09 de setembro de 2022
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--##################################04#####################################################-->
+              <div class="col-xl col-12 padd-bottom-30">
+                <div class="cursos">
+
+                  <div class="card-curso">
+                    <div class="content">
+                      <div class="back">
+                        <div class="back-content">
+                          <img src="images/icon/al.webp" width="130px" alt="">
+                          <strong class="str-curso">Microservices com Spring Cloud</strong>
+                        </div>
+                      </div>
+                      <div class="front">
+
+                        <div class="img">
+                          <div class="circle">
+                          </div>
+                          <div class="circle" id="right">
+                          </div>
+                          <div class="circle" id="bottom">
+                          </div>
+                        </div>
+
+                        <div class="front-content">
+                          <small class="badge">Certificado</small>
+                          <a href="https://cursos.alura.com.br/certificate/c95b048d-3d37-42e8-8d19-486611a43b62"
+                            target="_blank" rel="noopener noreferrer">
+                            <img src="images/certificados/MicrosrvicesSpringCloud.png" alt="" width="100%">
+                          </a>
+                          <div class="description">
+                            <div class="title">
+                              <p class="title">
+                                <strong>Finalizado</strong>
+                              </p>
+                              <svg fill-rule="nonzero" height="15px" width="20px" viewBox="0,0,256,256"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                                <g style="mix-blend-mode: normal" text-anchor="none" font-size="none" font-weight="none"
+                                  font-family="none" stroke-dashoffset="0" stroke-dasharray="" stroke-miterlimit="10"
+                                  stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="none"
+                                  fill-rule="nonzero" fill="#20c997">
+                                  <g transform="scale(8,8)">
+                                    <path d="M25,27l-9,-6.75l-9,6.75v-23h18z"></path>
+                                  </g>
+                                </g>
+                              </svg>
+                            </div>
+                            <p class="card-footer">
+                              8 Horas &nbsp; | &nbsp; 09 de setembro de 2022
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <!--#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>ROW-02#####################################################-->
+            <div class="row padd-top-30">
+              <!--##################################01#####################################################-->
+              <div class="col-xl col-12 padd-bottom-30">
+                <div class="cursos">
+
+                  <div class="card-curso">
+                    <div class="content">
+                      <div class="back">
+                        <div class="back-content">
+                          <img src="images/icon/al.webp" width="130px" alt="">
+                          <strong class="str-curso">Microservices com Spring Cloud</strong>
+                        </div>
+                      </div>
+                      <div class="front">
+
+                        <div class="img">
+                          <div class="circle">
+                          </div>
+                          <div class="circle" id="right">
+                          </div>
+                          <div class="circle" id="bottom">
+                          </div>
+                        </div>
+
+                        <div class="front-content">
+                          <small class="badge">Certificado</small>
+                          <a href="https://cursos.alura.com.br/certificate/c95b048d-3d37-42e8-8d19-486611a43b62"
+                            target="_blank" rel="noopener noreferrer">
+                            <img src="images/certificados/MicrosrvicesSpringCloud.png" alt="" width="100%">
+                          </a>
+                          <div class="description">
+                            <div class="title">
+                              <p class="title">
+                                <strong>Finalizado</strong>
+                              </p>
+                              <svg fill-rule="nonzero" height="15px" width="20px" viewBox="0,0,256,256"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                                <g style="mix-blend-mode: normal" text-anchor="none" font-size="none" font-weight="none"
+                                  font-family="none" stroke-dashoffset="0" stroke-dasharray="" stroke-miterlimit="10"
+                                  stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="none"
+                                  fill-rule="nonzero" fill="#20c997">
+                                  <g transform="scale(8,8)">
+                                    <path d="M25,27l-9,-6.75l-9,6.75v-23h18z"></path>
+                                  </g>
+                                </g>
+                              </svg>
+                            </div>
+                            <p class="card-footer">
+                              8 Horas &nbsp; | &nbsp; 09 de setembro de 2022
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--##################################02#####################################################-->
+              <div class="col-xl col-12 padd-bottom-30">
+                <div class="cursos">
+
+                  <div class="card-curso">
+                    <div class="content">
+                      <div class="back">
+                        <div class="back-content">
+                          <img src="images/icon/al.webp" width="130px" alt="">
+                          <strong class="str-curso">Microservices com Spring Cloud</strong>
+                        </div>
+                      </div>
+                      <div class="front">
+
+                        <div class="img">
+                          <div class="circle">
+                          </div>
+                          <div class="circle" id="right">
+                          </div>
+                          <div class="circle" id="bottom">
+                          </div>
+                        </div>
+
+                        <div class="front-content">
+                          <small class="badge">Certificado</small>
+                          <a href="https://cursos.alura.com.br/certificate/c95b048d-3d37-42e8-8d19-486611a43b62"
+                            target="_blank" rel="noopener noreferrer">
+                            <img src="images/certificados/MicrosrvicesSpringCloud.png" alt="" width="100%">
+                          </a>
+                          <div class="description">
+                            <div class="title">
+                              <p class="title">
+                                <strong>Finalizado</strong>
+                              </p>
+                              <svg fill-rule="nonzero" height="15px" width="20px" viewBox="0,0,256,256"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                                <g style="mix-blend-mode: normal" text-anchor="none" font-size="none" font-weight="none"
+                                  font-family="none" stroke-dashoffset="0" stroke-dasharray="" stroke-miterlimit="10"
+                                  stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="none"
+                                  fill-rule="nonzero" fill="#20c997">
+                                  <g transform="scale(8,8)">
+                                    <path d="M25,27l-9,-6.75l-9,6.75v-23h18z"></path>
+                                  </g>
+                                </g>
+                              </svg>
+                            </div>
+                            <p class="card-footer">
+                              8 Horas &nbsp; | &nbsp; 09 de setembro de 2022
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--##################################03#####################################################-->
+              <div class="col-xl col-12 padd-bottom-30">
+                <div class="cursos">
+
+                  <div class="card-curso">
+                    <div class="content">
+                      <div class="back">
+                        <div class="back-content">
+                          <img src="images/icon/al.webp" width="130px" alt="">
+                          <strong class="str-curso">Microservices com Spring Cloud</strong>
+                        </div>
+                      </div>
+                      <div class="front">
+
+                        <div class="img">
+                          <div class="circle">
+                          </div>
+                          <div class="circle" id="right">
+                          </div>
+                          <div class="circle" id="bottom">
+                          </div>
+                        </div>
+
+                        <div class="front-content">
+                          <small class="badge">Certificado</small>
+                          <a href="https://cursos.alura.com.br/certificate/c95b048d-3d37-42e8-8d19-486611a43b62"
+                            target="_blank" rel="noopener noreferrer">
+                            <img src="images/certificados/MicrosrvicesSpringCloud.png" alt="" width="100%">
+                          </a>
+                          <div class="description">
+                            <div class="title">
+                              <p class="title">
+                                <strong>Finalizado</strong>
+                              </p>
+                              <svg fill-rule="nonzero" height="15px" width="20px" viewBox="0,0,256,256"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                                <g style="mix-blend-mode: normal" text-anchor="none" font-size="none" font-weight="none"
+                                  font-family="none" stroke-dashoffset="0" stroke-dasharray="" stroke-miterlimit="10"
+                                  stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="none"
+                                  fill-rule="nonzero" fill="#20c997">
+                                  <g transform="scale(8,8)">
+                                    <path d="M25,27l-9,-6.75l-9,6.75v-23h18z"></path>
+                                  </g>
+                                </g>
+                              </svg>
+                            </div>
+                            <p class="card-footer">
+                              8 Horas &nbsp; | &nbsp; 09 de setembro de 2022
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--##################################04#####################################################-->
+              <div class="col-xl col-12 padd-bottom-30">
+                <div class="cursos">
+
+                  <div class="card-curso">
+                    <div class="content">
+                      <div class="back">
+                        <div class="back-content">
+                          <img src="images/icon/al.webp" width="130px" alt="">
+                          <strong class="str-curso">Microservices com Spring Cloud</strong>
+                        </div>
+                      </div>
+                      <div class="front">
+
+                        <div class="img">
+                          <div class="circle">
+                          </div>
+                          <div class="circle" id="right">
+                          </div>
+                          <div class="circle" id="bottom">
+                          </div>
+                        </div>
+
+                        <div class="front-content">
+                          <small class="badge">Certificado</small>
+                          <a href="https://cursos.alura.com.br/certificate/c95b048d-3d37-42e8-8d19-486611a43b62"
+                            target="_blank" rel="noopener noreferrer">
+                            <img src="images/certificados/MicrosrvicesSpringCloud.png" alt="" width="100%">
+                          </a>
+                          <div class="description">
+                            <div class="title">
+                              <p class="title">
+                                <strong>Finalizado</strong>
+                              </p>
+                              <svg fill-rule="nonzero" height="15px" width="20px" viewBox="0,0,256,256"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                                <g style="mix-blend-mode: normal" text-anchor="none" font-size="none" font-weight="none"
+                                  font-family="none" stroke-dashoffset="0" stroke-dasharray="" stroke-miterlimit="10"
+                                  stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="none"
+                                  fill-rule="nonzero" fill="#20c997">
+                                  <g transform="scale(8,8)">
+                                    <path d="M25,27l-9,-6.75l-9,6.75v-23h18z"></path>
+                                  </g>
+                                </g>
+                              </svg>
+                            </div>
+                            <p class="card-footer">
+                              8 Horas &nbsp; | &nbsp; 09 de setembro de 2022
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </article>
+
+        <article class="padd-top-30">
+          <div class="container">
+            <div class="row">
+              <div class="section-title ">
+                <h2>Cursos Front-End</h2>
+              </div>
+            </div>
+          </div>
+        </article>
+
+
+      </section>
+
+      <section>
+        <div class="container">
+          <footer class="bg-dark text-center text-lg-start text-white">
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+
+              Copyright &copy;
+              <script>document.write(new Date().getFullYear());</script> All rights reserved | Jailson Silva de França
+            </div>
+            <!-- Copyright -->
+          </footer>
+
+        </div>
+      </section>
+
+
+      <!-- ============ Style Switcher Start   ==================-->
+      <div class="style-switcher">
+
+        <div class="style-switcher-toggler s-icon">
+          <i class="fas fa-cog fa-spin"></i>
+        </div>
+
+        <div class="day-night s-icon">
+          <i class="fas "></i>
+        </div>
+
+        <h4>Theme Colors</h4>
+        <div class="colors">
+          <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+          <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+          <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+          <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+          <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        </div>
+      </div>
+      <!-- ============ Style Switcher End   ==================-->
+
 
     </div>
+
+
   </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+    referrerpolicy="no-referrer"></script>
   <script src="js/script.js"></script>
   <script src="js/switcher.js"></script>
 
